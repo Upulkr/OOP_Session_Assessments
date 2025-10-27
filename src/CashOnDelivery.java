@@ -1,0 +1,25 @@
+public class CashOnDelivery extends Payment {
+
+    String deliveryAddress;
+
+
+    public CashOnDelivery(double amount, String currency, String deliveryAddress) {
+        super(amount, currency);
+
+        this.deliveryAddress = deliveryAddress;
+
+    }
+
+
+    public void processPayment() {
+        System.out.println("\"Cash will be collected at delivery address:" +  deliveryAddress);
+    }
+
+//    public void generateReceipt(){
+//
+//    }
+
+
+
+
+}
